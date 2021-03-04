@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1614640199 source:c:\users\peter\desktop\book shop\funcbookshop.cpp
+	"FuncBookShop.h"
+
+1614636772 source:c:\users\peter\desktop\book shop\main.cpp
+	"FuncBookShop.h"
+
+1614640205 c:\users\peter\desktop\book shop\funcbookshop.h
+	<iostream>
+	<fstream>
+
+1614636772 source:c:\users\p1-18\desktop\book shop\main.cpp
+	"FuncBookShop.h"
+
+1614671602 c:\users\p1-18\desktop\book shop\funcbookshop.h
+	<iostream>
+	<fstream>
+
+1614677598 source:c:\users\peter\desktop\bookshop-main\book shop\main.cpp
+	"FuncBookShop.h"
+
+1614888148 c:\users\peter\desktop\bookshop-main\book shop\funcbookshop.h
+	<iostream>
+	<fstream>
+

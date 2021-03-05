@@ -12,19 +12,33 @@ int countTotal()
     return count_total;
 }
 
-void loadDataFromFile()
+void dataLocation(std::string line)
 {
-    int countLineFromFile = countTotal();
-    std::ifstream file("database.txt");
-    struct Books_on_warehouse warehouse[countLineFromFile];
-    for (int i = 0; i < countLineFromFile; ++i) {
-        file >> warehouse[i].autor >> warehouse[i].names_books >> warehouse[i].count_books >> warehouse[i].book_stored >> warehouse[i].ISBN >> warehouse[i].price;
+    int nc = 0;
+    std::string str;
+    struct Books_on_warehouse warehouse[countTotal()];
+    for (unsigned int i = 0; i < line.length(); ++i) {
+        if (line[i] != '|') {
+            str += line[i];
+        }
+        else if (line[i] == '|') {
+            str += line[i];
+        }
     }
 }
 
-void findBookByAutor(std::string find_name_book)
+void loadDataFromFile()
 {
-    struct Books_on_warehouse warehouse[countLineFromFile];
+    std::string line;
+    std::ifstream file("database.txt");
+    while (getline(file, line))
+    {
+
+    }
+}
+
+void findBookByAutor(struct Books_on_warehouse warehouse)
+{
 
 }
 

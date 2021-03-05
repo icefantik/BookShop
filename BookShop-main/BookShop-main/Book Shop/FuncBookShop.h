@@ -21,9 +21,10 @@ struct Books_on_warehouse
     unsigned int count_books; //Количество книг на складе
     std::string book_stored; //На каком стелаже эта книга храница
     std::string ISBN;
-    unsigned long profit;
+    unsigned long price;
 };
 
-void menu();
+std::string findBookByAutor(std::string find_autor_book);
+std::string findBookByName(std::string find_name_book);
 
 #endif // FUNCBOOKSHOP_H_INCLUDED
